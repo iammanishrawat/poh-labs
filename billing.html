@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Billing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <header class="site-header">
+        <div class="container-fluid">
+            <div class="heroSection-inner">
+                <div class="logo">
+                    <img src="./assets/images/logo.svg" alt="Logo">
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#">Tests & Packages</a></li>
+                        <li><a href="#">Nearest Centres</a></li>
+                        <li><a href="#">POH Hospitals</a></li>
+                        <!-- <li class="has-dropdown">
+                            <a href="#">Services <span><img src="./assets/images/icons/down-chev.svg" alt=""></span></a>
+                        </li> -->
+                    </ul>
+                    <div class="cart-area">
+                        <img src="./assets/images/icons/cart.svg" alt="">
+                    </div>
+                    <div class="header-cta">
+                        <a href="javascript:void(0)" id="openLogin" class="btn-cta">
+                            Login/ Signup
+                        </a>
+                        <a href="#" class="btn-book">
+                            Book a Test
+                        </a>
+                    </div>
+                </nav>
+                <!-- <button class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button> -->
+            </div>
+        </div>
+    </header>
+    <!-- navigation bar -->
+
+    <div class="cartPage">
+        <div class="container-fluid">
+            <div class="cartPageInner">
+                <div class="leftArea">
+                    <h2>Billing & Payment</h2>
+                    <h5>Choose your payment method and complete booking</h5>
+                    <div class="cartArea">
+                        <h4>Apply Coupons</h4>
+                        <div class="inputArea">
+                            <form action="">
+                                <input type="text" class="form-control" placeholder="Enter Coupon Code" />
+                                <a href="javascript:void(0)">Apply</a>
+                            </form>
+                        </div>
+                        <div class="selectedCoupon">
+                            <h5>Available Coupons: HEALTH100 - Get ₹100 off</h5>
+                            <a href="javascript:void(0)">Select</a>
+                        </div>
+                    </div>
+                    <div class="cartArea">
+                        <h4>Select Payment Method</h4>
+                        <hr>
+                        <div class="inner">
+                            <div class="leftInner">
+                                <img src="./assets/images/icons/wallet.svg" alt="">
+                                <div>
+                                    <h5>UPI</h5>
+                                    <h6>Googlepay, Paytm, Phonepay</h6>
+                                </div>
+                            </div>
+                            <div class="rightInner">
+                                <a href="javascript:void(0)">
+                                    <img src="./assets/images/icons/blue-arrow.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="inner">
+                            <div class="leftInner">
+                                <img src="./assets/images/icons/wallet.svg" alt="">
+                                <div>
+                                    <h5>Debit/ Credit Card</h5>
+                                    <h6>Visa, Mastercard, Rupay & more</h6>
+                                </div>
+                            </div>
+                            <div class="rightInner">
+                                <a href="javascript:void(0)">
+                                    <img src="./assets/images/icons/blue-arrow.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightArea">
+                    <h3>Bill Summary</h3>
+                    <div class="billSummaryArea">
+                        <div class="inner">
+                            <div class="leftInner">
+                                <h4>Subtotal (3 Tests)</h4>
+                            </div>
+                            <div class="rightInner">
+                                <h4>₹2,899</h4>
+                            </div>
+                        </div>
+                        <div class="inner">
+                            <div class="leftInner">
+                                <h4>Total Savings</h4>
+                            </div>
+                            <div class="rightInner">
+                                <h4>-₹380</h4>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="inner">
+                            <div class="leftInner">
+                                <h4>To be Paid</h4>
+                            </div>
+                            <div class="rightInner">
+                                <h3>₹1,899</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="footer-inner">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="./assets/images/logo.svg" alt="logo">
+                    </div>
+                    <p>Trusted diagnostic testing with certified labs and expert care.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Popular Tests</h3>
+                    <ul id="footerCategoryMenuListContainer">
+                        <li>
+                            <a href="#">
+                                <span>CBC Test</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>HbA1c Test</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Widal Test</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Lipid Profile Test</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>KFT Test</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Thyroid Test</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Double Marker Test</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>Book a Test</span>
+                            </a>
+                        <li>
+                            <a href="#">
+                                <span>Health Packages</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Home Sample Collection</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>Contact Us</span>
+                            </a>
+                        <li>
+                            <a href="#">
+                                <span>Help Center</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Terms & Conditions</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Privacy Policy</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/images/icons/call.svg" alt=""> +91-9811110705
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/images/icons/mail.svg" alt=""> support@pacificlabs@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/images/icons/web.svg" alt=""> www.pacificonehealth.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/images/icons/time.svg" alt=""> Mon - Sun | 7:00 AM - 9:00 PM
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="bottomLine">
+        <p>© 2026 Pacific One Labs. All rights reserved. Diagnostic services provided independently of medical consultation. Tests conducted at certified laboratories as per applicable standards.</p>
+    </div>
+
+    <!-- address Modal -->
+    <div class="modal fade addressModal" id="addressModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+            <div class="modal-body">
+                <h4>Address</h4>
+                <p class="subText">Add the address for sample collection</p>
+
+                <div class="row g-3 mt-3">
+
+                <div class="col-md-6">
+                    <label>Address</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="col-md-6">
+                    <label>City</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="col-md-6">
+                    <label>State</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="col-md-6">
+                    <label>PIN code</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                </div>
+
+                <button class="btn continueBtn mt-4">
+                Continue
+                </button>
+
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade loginModal" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                    <!-- Left Image -->
+                        <div class="col-md-5 imageArea">
+                            <img src="./assets/images/auth-image.png" alt="">
+                        </div>
+                        <!-- Right Form -->
+                        <div class="col-md-7 formArea">
+                            <h3>Login</h3>
+                            <p>Book lab tests and get access to your orders, reports and more in your account</p>
+
+                            <div class="mt-4">
+                            <label>Name</label>
+                            <input type="text" class="form-control" value="Divya">
+                            </div>
+
+                            <div class="mt-3">
+                            <label>Mobile number</label>
+
+                            <div class="d-flex gap-2">
+
+                                <select class="form-select countryCode">
+                                    <option>+91</option>
+                                    <option>+91</option>
+                                    <option>+91</option>
+                                    <option>+91</option>
+                                    <option>+91</option>
+                                </select>
+
+                                <input type="text" class="form-control">
+                            </div>
+                            </div>
+
+                            <button class="btn sendOtpBtn mt-4" id="openOtp">
+                                Send OTP
+                            </button>
+
+                            <p class="signupText mt-3">
+                            New to Pacific OneHealth Labs? <a href="#">Signup</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Otp Modal -->
+    <div class="modal fade otpModal" id="otpModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                    <!-- Left Image -->
+                        <div class="col-md-5 imageArea">
+                            <img src="./assets/images/auth-image.png" alt="">
+                        </div>
+                        <!-- Right Content -->
+                        <div class="col-md-7 otpArea">
+
+                            <h3>Enter OTP</h3>
+
+                            <p>
+                            An OTP has been sent to your registered mobile number ending with 6421
+                            </p>
+
+                            <div class="otpInputs mt-4">
+                            <input maxlength="1">
+                            <input maxlength="1">
+                            <input maxlength="1">
+                            <input maxlength="1">
+                            <input maxlength="1">
+                            <input maxlength="1">
+                            </div>
+
+                            <p class="resendText mt-3">
+                            Did not receive OTP? <a href="#">Resend</a>
+                            </p>
+
+                            <button class="btn submitOtpBtn mt-3">
+                            Submit OTP
+                            </button>
+
+                            <p class="signupText mt-3">
+                            New to Pacific OneHealth Labs? <a href="#">Signup</a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Date modal -->
+     <div class="modal fade dateTimeModal" id="dateTimeModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+
+            <div class="modal-body">
+
+                <h3>Date & Time</h3>
+                <p>Please select the date and slot for home sample collection as per your convenience</p>
+
+                <div class="row mt-4">
+
+                <!-- Calendar -->
+                <div class="col-md-4">
+
+                    <h6>Select Date</h6>
+
+                    <div class="calendarBox">
+
+                    <div class="calHeader">
+                        <span id="prevMonth">&#8249;</span>
+                        <strong id="monthYear"></strong>
+                        <span id="nextMonth">&#8250;</span>
+                    </div>
+
+                    <div class="weekDays">
+                        <span>Mon</span><span>Tue</span><span>Wed</span>
+                        <span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+                    </div>
+
+                    <div class="datesGrid" id="datesGrid"></div>
+
+                    </div>
+
+                </div>
+
+                <!-- Time Slots -->
+                <div class="col-md-8">
+
+                    <h6>Time Slot</h6>
+
+                    <div class="slotsArea">
+
+                    <span class="slot">10:30 am</span>
+                    <span class="slot">11:00 am</span>
+                    <span class="slot">11:30 am</span>
+                    <span class="slot">12:00 pm</span>
+
+                    <span class="slot disabled">12:30 pm</span>
+                    <span class="slot disabled">1:00 pm</span>
+                    <span class="slot active">1:30 pm</span>
+                    <span class="slot">2:00 pm</span>
+
+                    <span class="slot">2:30 pm</span>
+                    <span class="slot">3:00 pm</span>
+                    <span class="slot">3:30 pm</span>
+                    <span class="slot">4:00 pm</span>
+
+                    <span class="slot">4:30 pm</span>
+                    <span class="slot disabled">5:00 pm</span>
+                    <span class="slot">5:30 pm</span>
+
+                    </div>
+
+                    <a href="#" class="viewMore">View more</a>
+
+                </div>
+
+                </div>
+
+                <button class="btn confirmBtn mt-4">
+                Confirm
+                </button>
+
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
